@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #e3f0ff 0%, #b3cfff 50%, #6fa3ef 100%);
+    min-height: 100vh;
+}
+/* Navbar container */
+    .navbar {
+    background: linear-gradient(90deg, #1a1a1a, #0d2a52, #1a1a1a); 
+    /* gradient from dark → deep blue → dark */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    }
+
+    /* Logo */
+    .logo {
+    position: absolute;
+    left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    }
+
+    /* Navigation links in rectangular box */
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.05); /* subtle transparent box */
+    border: 2px solid whitesmoke; /* light border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+    position: relative;
+    border-radius: 8px;
+    backdrop-filter: blur(6px); /* glass effect */
+    }
+
+    .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+        color: #FFD54F; /* yellow on hover */
+    }
+
+    /* Resume Button - top right */
+    .resume-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(120deg, #e3f0ff 0%, #b3cfff 50%, #6fa3ef 100%);  /* 🔥 bright orange */
+    color: black;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+    }
+
+    .resume-btn:hover {
+    background: #FFD54F; /* lighter orange on hover */
+    }
+
+    /* Hero Section */
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 10%;
+        color: white;
+        background: linear-gradient(to right, #000000, #0a2a43); /* blends with your header */
+    }
+
+    .hero-content {
+        max-width: 55%;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #ccc;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    .hero-content h1 span {
+        color: #6c63ff; /* Highlight color */
+        text-shadow: 2px 2px 8px rgba(108, 99, 255, 0.6);
+    }
+
+    .hero-content h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #ddd;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .btn-primary {
+        color: rgb(0, 0, 0);
+        padding: 12px 25px;
+        border: 2px solid black;
+        border-radius: 6px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+        background: #FFD54F;
+    }
+
+    .btn-outline {
+        border: 2px solid black;
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn-outline:hover {
+        background: #FFD54F;
+        color: black;
+    }
+
+    /* Right Side Image */
+    .hero-image {
+        max-width: 40%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .hero-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .hero-img img {
+        width: 340px; /* adjust size as per need */
+        z-index: 2;
+        position: relative;
+    }
+
+    /* Background circle behind the photo */
+    .hero-img::before {
+        content: "";
+        position: absolute;
+        width: 420px;  /* slightly larger than the image */
+        height: 420px;
+        border-radius: 50%;
+        background: radial-gradient(circle at center, #0d47a1, #000);
+        z-index: 1;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 10%;
+        gap: 40px;
+    }
+
