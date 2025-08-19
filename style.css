@@ -4,10 +4,10 @@ body {
     background: linear-gradient(120deg, #e3f0ff 0%, #b3cfff 50%, #6fa3ef 100%);
     min-height: 100vh;
 }
-/* Navbar container */
+
     .navbar {
     background: linear-gradient(90deg, #1a1a1a, #0d2a52, #1a1a1a); 
-    /* gradient from dark → deep blue → dark */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
     position: relative;
     }
 
-    /* Logo */
+    
     .logo {
     position: absolute;
     left: 20px;
@@ -24,19 +24,19 @@ body {
     color: white;
     }
 
-    /* Navigation links in rectangular box */
+    
     .nav-links {
     list-style: none;
     display: flex;
     gap: 40px;
     margin: 0;
     padding: 10px 30px;
-    background: rgba(255, 255, 255, 0.05); /* subtle transparent box */
-    border: 2px solid whitesmoke; /* light border */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid whitesmoke; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     border-radius: 8px;
-    backdrop-filter: blur(6px); /* glass effect */
+    backdrop-filter: blur(6px); 
     }
 
     .nav-links li a {
@@ -47,16 +47,16 @@ body {
     }
 
     .nav-links li a:hover {
-        color: #FFD54F; /* yellow on hover */
+        color: #FFD54F;
     }
 
-    /* Resume Button - top right */
+    
     .resume-btn {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(120deg, #e3f0ff 0%, #b3cfff 50%, #6fa3ef 100%);  /* 🔥 bright orange */
+    background: linear-gradient(120deg, #e3f0ff 0%, #b3cfff 50%, #6fa3ef 100%);  
     color: black;
     padding: 8px 16px;
     border-radius: 6px;
@@ -66,17 +66,17 @@ body {
     }
 
     .resume-btn:hover {
-    background: #FFD54F; /* lighter orange on hover */
+    background: #FFD54F; 
     }
 
-    /* Hero Section */
+   
     .hero-section {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 60px 10%;
         color: white;
-        background: linear-gradient(to right, #000000, #0a2a43); /* blends with your header */
+        background: linear-gradient(to right, #000000, #0a2a43); 
     }
 
     .hero-content {
@@ -96,7 +96,7 @@ body {
     }
 
     .hero-content h1 span {
-        color: #6c63ff; /* Highlight color */
+        color: #6c63ff; 
         text-shadow: 2px 2px 8px rgba(108, 99, 255, 0.6);
     }
 
@@ -166,16 +166,16 @@ body {
     }
 
     .hero-img img {
-        width: 340px; /* adjust size as per need */
+        width: 340px; 
         z-index: 2;
         position: relative;
     }
 
-    /* Background circle behind the photo */
+    
     .hero-img::before {
         content: "";
         position: absolute;
-        width: 420px;  /* slightly larger than the image */
+        width: 420px;  
         height: 420px;
         border-radius: 50%;
         background: radial-gradient(circle at center, #0d47a1, #000);
@@ -189,4 +189,5 @@ body {
         padding: 50px 10%;
         gap: 40px;
     }
+
 
